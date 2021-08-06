@@ -1,26 +1,14 @@
-const tabMixin = { home, menu, contact }
-
-function home () {
-  return "home1"
-}
-
-function menu () {
-  return "menu1"
-}
-
-function contact () {
-  return "contact1"
-}
+import tabMixin from "./tab-mixin.js"
 
 
 export default function template (tab) {
 
   if (tab) {
     const content = document.createElement("div")
-    content.setAttribute("id", "main-content")
-    console.log(tab)
-   // content.appendChild(tabMixin[tab]())
+    content.classList.add("main-content")
+    content.setAttribute("id", `${tab}-content`)
 
+    content.appendChild(tabMixin[tab]())
 
     return content
   }
@@ -74,6 +62,21 @@ export default function template (tab) {
   mainDiv.appendChild(template(tab))
 
   container.appendChild(mainDiv)
+
+  const footer = document.createElement("div")
+  footer.setAttribute("id", "footer")
+
+  const linkGit = document.createElement("a")
+  linkGit.setAttribute("href", "https://github.com/leau-void")
+  linkGit.textContent = "Github"
+  footer.appendChild(linkGit)
+
+  const linkReadme = document.createElement("a")
+  linkReadme.setAttribute("href", "./README.md")
+  linkReadme.textContent = "README"
+  footer.appendChild(linkReadme)
+
+  container.appendChild(footer)
   
   return container
 }
