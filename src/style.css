@@ -19,7 +19,7 @@ html, body {
   color: black;
 }
 
-.header {
+#header {
   height: 25%;
   min-height: 220px;
   background-color: rgba(203, 153, 126, 1) ;
@@ -45,9 +45,19 @@ html, body {
 #nav-bar {
   min-height: 100px;
   background: orange;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.main {
+.tabs {
+  border: 2px solid black;
+  background: transparent;
+  padding: 10px;
+
+}
+
+#main {
   height: 70%;
   min-height: 400px;
   flex-grow: 10;
@@ -62,12 +72,12 @@ html, body {
   background: rgba(233, 237, 201, 0.6);
 }
 
-.footer {
+#footer {
   height: 40px;
   background: rgba(221, 190, 169, 0.8);
 }
 
-.footer > a {
+#footer > a {
 
 }
 
