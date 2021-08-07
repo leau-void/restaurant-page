@@ -10,7 +10,7 @@
     },
     {
       "tag": "img",
-      "attributes": [["id", "home-picture"], ["src", "./herbs-table-diving.jpg"]]
+      "attributes": [["id", "home-picture"], ["src", ""]]
     },
     {
       "tag": "div",

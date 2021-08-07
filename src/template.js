@@ -2,7 +2,6 @@ import tabMixin from './tab-mixin.js'
 import buildElementsTree from './build-element-tree.js'
 import templateJSON from './template.JSON'
 
-
 export default function template (tab) {
 
   if (tab) {
