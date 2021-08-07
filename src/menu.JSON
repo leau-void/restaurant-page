@@ -1,0 +1,52 @@
+{
+  "tag": "div",
+  "classes": ["main-content"],
+  "attributes": [["id", "home-content"]],
+  "children": [
+    {
+      "tag": "div",
+      "classes": ["tab-title"],
+      "text": "Menu"
+    },
+    {
+      "tag": "div",
+      "classes": ["menu-text"], 
+      "text": "Stinging Nettle appetizer"
+    },
+    {
+      "tag": "div",
+      "classes": ["menu-text"], 
+      "text": "Mints and Misc Salad"
+    },
+    {
+      "tag": "div",
+      "classes": ["menu-text"], 
+      "text": "Rosemary and Thyme roasted Wild Caught Salmon"
+    },
+    {
+      "tag": "div",
+      "classes": ["menu-text"], 
+      "text": "Sage and Basil Pesto on Sourdough Grilled Bread"
+    },
+    {
+      "tag": "div",
+      "classes": ["menu-text"], 
+      "text": "Roasted Giant Hyssop"
+    },
+    {
+      "tag": "div",
+      "classes": ["menu-text"], 
+      "text": "Mugwort and Lemon Primitive Beer"
+    },
+    {
+      "tag": "div",
+      "classes": ["menu-text"], 
+      "text": "Dandelion Root Coffee"
+    },
+    {
+      "tag": "div",
+      "classes": ["menu-text"], 
+      "text": "Mallow Ice Cream"
+    }
+  ]
+}

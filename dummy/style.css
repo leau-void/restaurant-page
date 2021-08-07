@@ -11,7 +11,10 @@ html, body {
   height: 100%;
 }
 
+
+
 #content {
+  font-family: 'Cinzel', serif;
   height: 100%;
   width: 100%;
   display: flex;
@@ -107,7 +110,7 @@ html, body {
 }
 
 .tab-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -115,18 +118,26 @@ html, body {
   width: 80%;
   text-align: center;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-#home-content {
+.main-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
+input {
+  outline: none;
+}
+
+#contact-content {
+
+}
+
 #home-picture {
   display: block;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   border-radius: 8px;
   border: 1px 2px solid black;

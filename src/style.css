@@ -11,6 +11,10 @@ html, body {
   height: 100%;
 }
 
+* {
+  font-family: 'Cinzel';
+}
+
 #content {
   height: 100%;
   width: 100%;
@@ -20,18 +24,19 @@ html, body {
 }
 
 #header {
+  
   height: 25%;
   min-height: 220px;
-  background-color: rgba(203, 153, 126, 1) ;
+  background-color: #DDBEA9;
   display: flex;
   flex-direction: column;
 }
 
 #header-main {
-  height: 8rem;
-  font-size: 4rem;
+  height: 100px;
+  font-size: 50px;
   text-align: center;
-  line-height: 11rem;
+  line-height: 100px;
 }
 
 #header-sub {
@@ -40,50 +45,125 @@ html, body {
   font-style: italic;
   font-size: 1.6rem;
   line-height: 1.6rem;
+  flex-grow: 1;
 }
 
 #nav-bar {
-  min-height: 100px;
-  background: orange;
+  min-height: 80px;
+  max-height: 80px;
+  background: #FFE8D6;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: stretch;
+  padding: 0;
 }
 
 .tabs {
-  border: 2px solid black;
-  background: transparent;
-  padding: 10px;
+  border-left: none;
+  border-right: 1px solid #6B705C;
+  border-top: 1px solid #6B705C;
+  border-bottom: 1px solid transparent;
+  margin: 0;
+  width: 33.4%;
+  font-size: 20px;
+  line-height: 80px;
+  text-align: center;
+  height: 80px;
+  color: #A06240;
+}
 
+.tabs:hover {
+  text-decoration: underline;
+  text-decoration-color: #A06240;
+}
+
+.active-tab {
+  background: #DDBEA9;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #6B705C;
+  color: #35382E;
+}
+
+.active-tab:hover {
+  text-decoration-color: #35382E;
 }
 
 #main {
   height: 70%;
-  min-height: 400px;
+  min-height: 570px;
   flex-grow: 10;
   align-items: stretch;
   background-image: url(./template-herbs-small.jpg);
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
 .main-content {
   width: 80%;
   height: 100%;
   margin: 0 auto;
-  background: rgba(233, 237, 201, 0.6);
+  background: rgba(233, 237, 201, 0.8);
+}
+
+.tab-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.tab-text {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input {
+  outline: none;
+}
+
+.menu-text {
+  text-align: center;
+  text-decoration: underline;
+  font-style: oblique;
+  font-size: 1.2rem;
+}
+
+#contact-content {
+
+}
+
+#home-picture {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px 2px solid black;
 }
 
 #footer {
+  position: relative;
+  bottom: 40px;
+  min-height: 40px;
   height: 40px;
-  background: rgba(221, 190, 169, 0.8);
-}
-
-#footer > a {
-
+  background: rgba(255, 232, 214, 0.85);
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 :any-link {
-  color: black;
+  color: #35382E;
   text-decoration: none;
+  font-size: 20px;
+  line-height: 40px;
+  width: 30%;
+  text-align: center;
 }
 
 :any-link:hover {

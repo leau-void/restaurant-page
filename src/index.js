@@ -1,8 +1,5 @@
 import './style.css'
 import template from './template.js'
-// import './home.js'
-// import './menu.js'
-// import './contact.js'
 
 
 const restaurant = (function () {
@@ -12,7 +9,11 @@ const restaurant = (function () {
   const _handler = () => {
     if (!event.target.classList.contains("tabs")) return
     let id = event.target.id
-    
+
+    const tabs = document.querySelectorAll(".tabs")
+    tabs.forEach(tab => tab.classList.remove("active-tab"))
+    event.target.classList.add("active-tab")
+
     _rebuild(id)
   }
   
