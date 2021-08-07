@@ -57,7 +57,7 @@
         },
         {
           "tag": "a",
-          "attributes": [["href", "./README.md"]],
+          "attributes": [["href", "../README.md"]],
           "text": "README"
         }
       ]
