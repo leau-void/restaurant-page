@@ -6,21 +6,54 @@
     {
       "tag": "div",
       "classes": ["tab-title"],
-      "text": "Contact"
+      "text": "Contact Us"
     },
     {
-      "tag": "img",
-      "attributes": [["id", "home-picture"], ["src", "./herbs-table-diving.jpg"]]
-    },
-    {
-      "tag": "div",
-      "classes": ["tab-text"], 
-      "text": "Au Basilic Sacré is at the intersection of the finest French Cuisine and of the folkloric usage of herbs as medicine."
-    },
-    {
-      "tag": "div",
-      "classes": ["tab-text"],
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "tag": "form",
+      "attributes": [["id", "contact-form"]],
+      "children": [
+        {
+          "tag": "label",
+          "text": "Your Name :"
+        },
+        {
+          "tag": "input",
+          "classes": ["contact-input"],
+          "attributes": [["type", "text"], ["required", true]]
+        },
+        {
+          "tag": "label",
+          "text": "Your Telephone Number :"
+        },
+        {
+          "tag": "input",
+          "classes": ["contact-input"],
+          "attributes": [["type", "tel"], ["pattern", "[0-9]{3}-[0-9]{3}-[0-9]{4}"], ["placeholder", "123-456-7890"]]
+        },
+        {
+          "tag": "label",
+          "text": "Your Email :"
+        },
+        {
+          "tag": "input",
+          "classes": ["contact-input"],
+          "attributes": [["type", "email"], ["required", true]]
+        },
+        {
+          "tag": "label",
+          "text": "What can we help you with?"
+        },
+        {
+          "tag": "textarea",
+          "classes": ["contact-input"],
+          "attributes": [["type", "text"], ["style", "resize: none"]]
+        },
+        {
+          "tag": "input",
+          "value": "Submit",
+          "attributes": [["type", "submit"]]
+        }
+      ]
     }
   ]
 }

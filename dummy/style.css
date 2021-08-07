@@ -11,10 +11,11 @@ html, body {
   height: 100%;
 }
 
-
+* {
+  font-family: 'Cinzel';
+}
 
 #content {
-  font-family: 'Cinzel', serif;
   height: 100%;
   width: 100%;
   display: flex;
@@ -23,6 +24,7 @@ html, body {
 }
 
 #header {
+  
   height: 25%;
   min-height: 220px;
   background-color: #DDBEA9;
@@ -53,32 +55,26 @@ html, body {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
+  padding: 0;
 }
 
 .tabs {
+  border-left: none;
   border-right: 1px solid #6B705C;
   border-top: 1px solid #6B705C;
   border-bottom: 1px solid transparent;
+  margin: 0;
   width: 33.4%;
   font-size: 20px;
   line-height: 80px;
   text-align: center;
-  height: 78px;
+  height: 80px;
   color: #A06240;
 }
 
 .tabs:hover {
   text-decoration: underline;
   text-decoration-color: #A06240;
-}
-
-.tabs:active {
-  background: #DDBEA9;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #6B705C;
-  color: #35382E;
-  text-decoration-color: #35382E;
-
 }
 
 .active-tab {
@@ -127,12 +123,28 @@ html, body {
   justify-content: space-evenly;
 }
 
-input {
-  outline: none;
+.menu-text {
+  text-align: center;
+  text-decoration: underline;
+  font-style: oblique;
+  font-size: 1.2rem;
 }
 
-#contact-content {
+#contact-form {
+  height: 80%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
+.contact-input {
+  outline: none;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 7px;
 }
 
 #home-picture {

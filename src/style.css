@@ -123,10 +123,6 @@ html, body {
   justify-content: space-evenly;
 }
 
-input {
-  outline: none;
-}
-
 .menu-text {
   text-align: center;
   text-decoration: underline;
@@ -134,8 +130,38 @@ input {
   font-size: 1.2rem;
 }
 
-#contact-content {
+#contact-form {
+  height: 80%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
+.contact-input {
+  outline: none;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 7px;
+  border: 1px solid #DDBEA9;
+  border-left: 2px solid #DDBEA9;
+}
+
+.contact-input:focus {
+  border-left: 2px solid black;
+}
+
+#contact-form input[type="submit"] {
+  background: #FFE8D6;
+  border: 1px solid #DDBEA9;
+  font-size: 16px;
+}
+
+#contact-form input[type="submit"]:active {
+  background: #DDBEA9;
+  border: 1px solid #FFE8D6;
 }
 
 #home-picture {
